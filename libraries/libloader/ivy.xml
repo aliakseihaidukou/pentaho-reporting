@@ -17,10 +17,10 @@
 
 	<dependencies defaultconf="default_internal->default">
 		<!-- internal dependencies -->
-		<dependency org="${ivy.artifact.group}" name="libbase" rev="${project.revision}" transitive="true" changing="true" />
+		<dependency org="${ivy.artifact.group}" name="libbase" rev="${project.revision}" conf="default_internal->default" transitive="true" changing="true" />
 
 		<!-- internal 'optional' dependencies -->
-		<dependency org="${ivy.artifact.group}" name="libpixie" rev="${project.revision}" transitive="true" changing="true" />
+		<dependency org="${ivy.artifact.group}" name="libpixie" rev="${project.revision}" conf="default_internal->default" transitive="true" changing="true" />
 
 		<!--  external 'optional' dependencies -->
 		<dependency org="org.apache.xmlgraphics" name="batik-anim" rev="1.7" conf="default_external->default" transitive="false"/>
