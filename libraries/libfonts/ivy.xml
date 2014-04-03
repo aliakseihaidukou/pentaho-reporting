@@ -17,7 +17,9 @@
 
 	<dependencies defaultconf="default_internal->default">
 		<!--  internal dependencies -->
-		<dependency org="${ivy.artifact.group}" name="libloader" rev="5.1-NIGHTLY.427" transitive="true" changing="true" />
+		<dependency org="${ivy.artifact.group}" name="libloader" rev="${project.revision}" transitive="true" changing="true" />
+    	<dependency org="${ivy.artifact.group}" name="libbase" rev="${project.revision}" transitive="true" changing="true" />
+		<dependency org="${ivy.artifact.group}" name="libpixie" rev="${project.revision}" transitive="true" changing="true" />
 
 		<!--  external dependencies -->
 		<dependency org="com.lowagie" name="itext" rev="2.1.7" transitive="false" changing="false" conf="default_external->default"/>
