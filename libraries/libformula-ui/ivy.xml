@@ -16,10 +16,10 @@
 	</publications>
 
 	<dependencies defaultconf="default_internal->default">
-		<!--  internal dependencies -->
-		<dependency org="${ivy.artifact.group}" name="libformula" rev="${project.revision}" transitive="true"
-                changing="true"/>
-		<dependency org="${ivy.artifact.group}" name="libswing" rev="${project.revision}" transitive="true" changing="true" />
+		<!--  internal dependencies -->	
+        <dependency org="${ivy.artifact.group}" name="libbase" rev="${project.revision}" transitive="true" changing="true" />		
+		<dependency org="${ivy.artifact.group}" name="libpixie" rev="${project.revision}" transitive="true" changing="true" />
+		<dependency org="${ivy.artifact.group}" name="libloader" rev="${project.revision}" transitive="true" changing="true" />
 
 		<!-- testing dependencies -->
 		<dependency org="junit" name="junit" rev="4.10" transitive="false" conf="test->default"/>
