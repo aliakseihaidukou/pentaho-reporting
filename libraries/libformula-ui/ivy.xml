@@ -20,7 +20,7 @@
         <dependency org="${ivy.artifact.group}" name="libbase" rev="${project.revision}" transitive="true" changing="true" />		
 		<dependency org="${ivy.artifact.group}" name="libformula" rev="${project.revision}" transitive="true" changing="true" />
 		<dependency org="${ivy.artifact.group}" name="libswing" rev="${project.revision}" transitive="true" changing="true" />
-     	<dependency org="${ivy.artifact.group}" name="libflute" rev="${project.revision}" transitive="true" changing="true" />
+     	<dependency org="${ivy.artifact.group}" name="flute" rev="${project.revision}" transitive="true" changing="true" />
         
 		<!-- testing dependencies -->
 		<dependency org="junit" name="junit" rev="4.10" transitive="false" conf="test->default"/>
