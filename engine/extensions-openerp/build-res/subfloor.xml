@@ -177,7 +177,7 @@ TYPICAL TARGET SEQUENCE
             value="true"
             description="Prefer SVNKit binding over the command line client for native svn support (defaults to true)" />
   <property name="ivy.url"
-            value="http://repo2.maven.org/maven2/org/apache/ivy/ivy/2.2.0/ivy-2.2.0.jar"
+            value="http://repo.pentaho.org/artifactory/repo/org/apache/ivy/ivy/2.3.0/ivy-2.3.0.jar"
             description="The URL to the current release of Apache IVY" />
 	
   <!-- Enunciate properties -->
@@ -1051,6 +1051,8 @@ TYPICAL TARGET SEQUENCE
     <ivy:makepom ivyfile="${ivyfile}" pomfile="${dist.dir}/pom.xml">
       <mapping conf="default" scope="compile" />
       <mapping conf="runtime" scope="runtime" />
+      <mapping conf="default_internal" scope="compile" />
+      <mapping conf="default_external" scope="compile" />
     </ivy:makepom>
   </target>
 
